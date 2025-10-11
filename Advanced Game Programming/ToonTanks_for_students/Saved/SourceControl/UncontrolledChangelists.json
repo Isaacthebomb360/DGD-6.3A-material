@@ -1,0 +1,13 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/danie/Desktop/lectures/advanced_game_programming/ToonTanks/Content/Maps/Main.umap",
+				"C:/Users/danie/Desktop/lectures/advanced_game_programming/ToonTanks/Content/Maps/Main_BuiltData.uasset"
+			]
+		}
+	]
+}
