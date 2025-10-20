@@ -7,7 +7,7 @@ public class Steering : MonoBehaviour
     private GameObject goal;
 
     [SerializeField]
-    private float npcSpeed = 10f;
+    private float npcSpeed = 5f;
 
     [SerializeField]
     private float stopDistance = 0.1f;
@@ -28,6 +28,7 @@ public class Steering : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         Vector3 goalRepositioned = new Vector3(goal.transform.position.x,
                                              this.transform.position.y,
                                              goal.transform.position.z);
