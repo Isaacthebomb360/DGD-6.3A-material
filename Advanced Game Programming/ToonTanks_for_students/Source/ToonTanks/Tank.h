@@ -27,6 +27,8 @@ public:
 
 	APlayerController* GetTankPlayerController() const { return TankPlayerController; };
 
+	virtual void HandleDestruction() override;
+
 protected:
 
 	virtual void BeginPlay() override;

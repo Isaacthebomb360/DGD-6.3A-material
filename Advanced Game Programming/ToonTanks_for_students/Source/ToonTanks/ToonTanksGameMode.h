@@ -9,9 +9,32 @@
 /**
  * 
  */
+class ATank;
+class AToonTanksPlayerController;
+
 UCLASS()
 class TOONTANKS_API AToonTanksGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
+
+public:
+
+	void ActorDied(AActor* DeadActor);
+
+protected:
+
+	virtual void BeginPlay() override;
+
+private:
+
+	ATank* Tank;
+
+	AToonTanksPlayerController* ToonTanksPlayerController;
+
+	void HandleGameStart();
+
+	int32 TargetTowers = 0;
+
+	int32 GetTargetTowersCount();
 	
 };
