@@ -40,18 +40,21 @@ void ATank::Tick(float DeltaTime)
             false,
             HitResult);
 
-        DrawDebugSphere(
-            GetWorld(),
-            HitResult.ImpactPoint,
-            25.f,
-            12,
-            FColor::Red,
-            false,
-            -1.f
-        );
-
         RotateTurret(HitResult.ImpactPoint);
     }
+
+#if ENABLE_VISUAL_LOG
+    VLogTimer += DeltaTime;
+
+    if (VLogTimer >= 1.0f)
+    {
+        UE_VLOG_ARROW(this, LogTemp, Verbose,
+            GetActorLocation(), GetActorLocation() + FVector::UpVector * 100,
+            FColor::Green, TEXT("Tank Position"));
+        
+        VLogTimer = 0.0f;
+    }
+#endif
 }
 
 void ATank::HandleDestruction()
@@ -61,7 +64,37 @@ void ATank::HandleDestruction()
     SetActorHiddenInGame(true);
 
     SetActorTickEnabled(false);
+
+#if ENABLE_VISUAL_LOG
+    UE_VLOG(this, TEXT("TankCategory"), Verbose, TEXT("Tank Destroyed at location (%s)"),
+        *GetActorLocation().ToString());
+
+    UE_VLOG_ARROW(this, LogTemp, Verbose, GetActorLocation(),
+        GetActorLocation() + FVector::UpVector * 100, FColor::Red, 
+        TEXT("Tank Destroyed"));
+#endif
 }
+
+#if ENABLE_VISUAL_LOG
+void ATank::GrabDebugSnapshot(FVisualLogEntry* Snapshot) const
+{
+    IVisualLoggerDebugSnapshotInterface::GrabDebugSnapshot(Snapshot);
+
+    const FVector Location = GetActorLocation();
+
+    const int32 CategoryIndex = Snapshot->Status.AddZeroed();
+    FVisualLogStatusCategory& Category = Snapshot->Status[CategoryIndex];
+
+    Category.Category = TEXT("TankCategory");
+    const FName CategoryName = FName(Category.Category);
+    Category.Add(TEXT("Location"), FString::Printf(TEXT("%s"), *Location.ToString()));
+
+    Snapshot->AddText(
+        FString::Printf(TEXT("Location: %s"), *Location.ToString()),
+        CategoryName, 
+        ELogVerbosity::Verbose);
+}
+#endif
 
 void ATank::BeginPlay()
 {

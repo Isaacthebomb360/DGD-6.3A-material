@@ -17,7 +17,7 @@ void AToonTanksGameMode::ActorDied(AActor* DeadActor)
             ToonTanksPlayerController->SetPlayerEnabledState(false);
         }
 
-        //TODO GameOver 
+        GameOver(false);
     }
     else
     {
@@ -29,7 +29,7 @@ void AToonTanksGameMode::ActorDied(AActor* DeadActor)
 
             if (TargetTowers == 0)
             {
-                //TODO GameOver 
+                GameOver(true);
             }
         }
 
@@ -48,12 +48,28 @@ void AToonTanksGameMode::HandleGameStart()
 
     Tank = Cast<ATank>(UGameplayStatics::GetPlayerPawn(this, 0));
 
+    StartGame();
+    
     ToonTanksPlayerController = 
         Cast<AToonTanksPlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 
+
     if (ToonTanksPlayerController)
     {
-        ToonTanksPlayerController->SetPlayerEnabledState(true);
+        ToonTanksPlayerController->SetPlayerEnabledState(false);
+
+        FTimerHandle PlayerEnabledTimerHandle;
+
+        FTimerDelegate PlayerTimerDelegate =
+            FTimerDelegate::CreateUObject(
+                ToonTanksPlayerController,
+                &AToonTanksPlayerController::SetPlayerEnabledState,
+                true
+            );
+
+        GetWorldTimerManager().SetTimer(
+            PlayerEnabledTimerHandle, PlayerTimerDelegate, 3.0f, false
+        );
     }
 }
 

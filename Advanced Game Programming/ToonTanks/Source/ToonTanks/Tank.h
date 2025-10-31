@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "BasePawn.h"
+#include "VisualLogger/VisualLoggerDebugSnapshotInterface.h"
 #include "Tank.generated.h"
 
 class USpringArmComponent;
@@ -13,7 +14,7 @@ class UCameraComponent;
  * 
  */
 UCLASS()
-class TOONTANKS_API ATank : public ABasePawn
+class TOONTANKS_API ATank : public ABasePawn, public IVisualLoggerDebugSnapshotInterface
 {
 	GENERATED_BODY()
 
@@ -28,6 +29,10 @@ public:
 	APlayerController* GetTankPlayerController() const { return TankPlayerController; };
 
 	virtual void HandleDestruction() override;
+
+#if ENABLE_VISUAL_LOG
+	virtual void GrabDebugSnapshot(FVisualLogEntry* Snapshot) const override;
+#endif
 
 protected:
 
@@ -52,4 +57,8 @@ private:
 	void Move(float Value);
 
 	void Turn(float Value);
+
+#if ENABLE_VISUAL_LOG
+	float VLogTimer = 0.0f;
+#endif
 };

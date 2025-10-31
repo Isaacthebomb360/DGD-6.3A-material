@@ -18,6 +18,9 @@ public:
 	// Sets default values for this component's properties
 	UHealthComponent();
 
+	UFUNCTION(BlueprintCallable)
+	float GetHealth() const { return Health; }
+
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
