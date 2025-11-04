@@ -1369,6 +1369,7 @@ GameObject:
   - component: {fileID: 315887982}
   - component: {fileID: 315887981}
   - component: {fileID: 315887980}
+  - component: {fileID: 315887983}
   m_Layer: 0
   m_Name: BookSocketnteractor2
   m_TagString: Untagged
@@ -1459,6 +1460,23 @@ Transform:
   - {fileID: 1144692444}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &315887983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315887979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c3afd69fb3f4a7ca6b1608ac898498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverEnterClip: {fileID: 8300000, guid: 35cf7766e9e2aa542811e896fde57989, type: 3}
+  hoverExitClip: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
+  selectClip: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  spatialize: 1
+  spatialBlend: 1
 --- !u!1 &378261382
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,6 +6051,7 @@ GameObject:
   - component: {fileID: 1981741880}
   - component: {fileID: 1981741879}
   - component: {fileID: 1981741878}
+  - component: {fileID: 1981741881}
   m_Layer: 0
   m_Name: BookSocketnteractor3
   m_TagString: Untagged
@@ -6123,6 +6142,23 @@ Transform:
   - {fileID: 1667505601}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1981741881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981741877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c3afd69fb3f4a7ca6b1608ac898498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverEnterClip: {fileID: 8300000, guid: 35cf7766e9e2aa542811e896fde57989, type: 3}
+  hoverExitClip: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
+  selectClip: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  spatialize: 1
+  spatialBlend: 1
 --- !u!1001 &1994733558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6443,6 +6479,7 @@ GameObject:
   - component: {fileID: 2063761607}
   - component: {fileID: 2063761605}
   - component: {fileID: 2063761608}
+  - component: {fileID: 2063761609}
   m_Layer: 0
   m_Name: BookSocketnteractor1
   m_TagString: Untagged
@@ -6533,6 +6570,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.19393995, z: 0.2}
   m_Center: {x: 0, y: -0.05303003, z: 0}
+--- !u!114 &2063761609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063761604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c3afd69fb3f4a7ca6b1608ac898498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverEnterClip: {fileID: 8300000, guid: 35cf7766e9e2aa542811e896fde57989, type: 3}
+  hoverExitClip: {fileID: 8300000, guid: 7cc057bed53baf34799f52aab3c84800, type: 3}
+  selectClip: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  spatialize: 1
+  spatialBlend: 1
 --- !u!1 &2072133055
 GameObject:
   m_ObjectHideFlags: 0
