@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5154892596552271118}
   - component: {fileID: 4720996963984983293}
-  - component: {fileID: 6438274653928805631}
   - component: {fileID: 5942810791398153843}
+  - component: {fileID: 6438274653928805631}
   m_Layer: 0
   m_Name: NetworkSpawner
   m_TagString: Untagged
@@ -46,18 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d215309f0424b914a99f31c67855c708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6438274653928805631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6221155824060538209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b30337ad9fbede4b9ba2a77a9f7e64b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5942810791398153843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2523033723
+  GlobalObjectIdHash: 1803333677
   InScenePlacedSourceGlobalObjectIdHash: 0
   DeferredDespawnTick: 0
   Ownership: 1
@@ -83,3 +71,24 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
+--- !u!114 &6438274653928805631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221155824060538209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b30337ad9fbede4b9ba2a77a9f7e64b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  playerPrefab: {fileID: 2029391536963717852, guid: 8137039cd147abc42992638f0acbb2e8, type: 3}
+  playerMaterials: []
+  spawnRadius: 6
+  maxPlayers: 4
+  unitPrefab: {fileID: 4428356627026761193, guid: 8509528a24194004b96b7ebf7e66a365, type: 3}
+  unitsPerPlayer: 4
+  unitSpawnDistance: 0
+  unitCircleRadius: 2
