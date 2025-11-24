@@ -30,6 +30,7 @@ protected:
 private:
 	void PrimaryInteract();
 	void CreateHUDWidget();
+	void TraceForItem();
 
 	UPROPERTY(EditAnywhere, Category = "Inventory")
 	TArray<UInputMappingContext*> DefaultIMCs;
@@ -42,4 +43,13 @@ private:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Inventory")
 	TSubclassOf<UInv_HUDWidget> HUDWidgetClass;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Inventory")
+	TEnumAsByte<ECollisionChannel> ItemTraceChannel;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Inventory")
+	double TraceLength;
+
+	TWeakObjectPtr<AActor> ThisActor;
+	TWeakObjectPtr<AActor> LastActor;
 };
