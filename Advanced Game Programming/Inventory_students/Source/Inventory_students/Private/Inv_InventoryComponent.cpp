@@ -59,6 +59,11 @@ void UInv_InventoryComponent::OpenInventoryMenu()
 	InventoryMenu->SetVisibility(ESlateVisibility::Visible);
 	bInventoryMenuOpen = true;
 
+	if (!OwningController.IsValid()) return;
+
+	FInputModeGameAndUI InputMode;
+	OwningController->SetInputMode(InputMode);
+	OwningController->SetShowMouseCursor(true);
 }
 
 void UInv_InventoryComponent::CloseInventoryMenu()
@@ -67,5 +72,11 @@ void UInv_InventoryComponent::CloseInventoryMenu()
 
 	InventoryMenu->SetVisibility(ESlateVisibility::Collapsed);
 	bInventoryMenuOpen = false;
+
+	if (!OwningController.IsValid()) return;
+
+	FInputModeGameOnly InputMode;
+	OwningController->SetInputMode(InputMode);
+	OwningController->SetShowMouseCursor(false);
 }
 

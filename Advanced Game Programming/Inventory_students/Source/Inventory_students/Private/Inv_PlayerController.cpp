@@ -8,6 +8,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Inv_ItemComponent.h"
 #include "Inv_Highlightable.h"
+#include "Inv_InventoryComponent.h"
 
 AInv_PlayerController::AInv_PlayerController()
 {
@@ -19,6 +20,13 @@ void AInv_PlayerController::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
     TraceForItem();
+}
+
+void AInv_PlayerController::ToggleInventory()
+{
+    if (!InventoryComponent.IsValid()) return;
+
+    InventoryComponent->ToggleInventoryMenu();
 }
 
 void AInv_PlayerController::BeginPlay()
@@ -38,6 +46,9 @@ void AInv_PlayerController::BeginPlay()
         }
     }
 
+    //NB: this is added in Blueprint but we can find it in C++
+    InventoryComponent = FindComponentByClass<UInv_InventoryComponent>();
+
     CreateHUDWidget();
 
 }
@@ -52,6 +63,10 @@ void AInv_PlayerController::SetupInputComponent()
     EnhancedInputComponent->BindAction(
         PrimaryInteractAction, ETriggerEvent::Started, this,
         &AInv_PlayerController::PrimaryInteract);
+
+    EnhancedInputComponent->BindAction(
+        ToggleInventoryAction, ETriggerEvent::Started, this,
+        &AInv_PlayerController::ToggleInventory);
 }
 
 void AInv_PlayerController::PrimaryInteract()
