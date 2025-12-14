@@ -3,9 +3,11 @@
 - hateing my life
 
 ## [Multiplayer](<Multiplayer Game Development>)
-[Multiplayer TCA notes (Formatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master.md>)
+[Multiplayer TCA notes (Formatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master CBA.md>)
 
-[Multiplayer TCA notes (UnFormatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master.txt>)
+[Multiplayer TCA notes (UnFormatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master CBA.txt>)
+
+<video controls src="Multiplayer Game Development/notes bcs i hate myself/video.mp4" title="BrainRot Video">Brainrot Video</video>
 
 ## [XR Dev](<XR Development>)
 
