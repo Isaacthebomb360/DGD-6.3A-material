@@ -20,7 +20,9 @@
 
 ## [Multiplayer](<Multiplayer Game Development>)
 ### Deadlines:
+- ~~CBA: December 15th~~
 - Teamwork: 19th
+- Individual: 19th
 
 [Multiplayer CBA notes (Formatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master CBA.md>)
 
