@@ -5,17 +5,19 @@
 
 ## [XR Dev](<XR Development>)
 ### Deadlines:
+- CBA: 16th
 - Teamwork: 16th
 - Individual: 30th
 
 ## [Unreal / AGP](<Advanced Game Programming>)
 ### Deadlines:
+- CBA: 20th (11:30)
 - Teamwork: 23rd
 - Individual: 30th
 
 ## [Game AI](<Game AI>)
 ### Deadlines:
-- TCA: 26th
+- CBA: 26th
 - Home Assignment: 28th
 
 ## [Multiplayer](<Multiplayer Game Development>)
