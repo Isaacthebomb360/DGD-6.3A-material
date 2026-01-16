@@ -5,8 +5,8 @@
 
 ## [XR Dev](<XR Development>)
 ### Deadlines:
-- CBA: 16th
-- Teamwork: 16th
+- ~~CBA: 16th~~
+- ~~Teamwork: 16th~~
 - Individual: 30th
 
 ## [Unreal / AGP](<Advanced Game Programming>)
@@ -23,7 +23,7 @@
 ## [Multiplayer](<Multiplayer Game Development>)
 ### Deadlines:
 - ~~CBA: 15th December~~
-- Teamwork: 19th January
+- __Teamwork: 19th January__
 - Individual: 23rd January
 
 [Multiplayer CBA notes (Formatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master CBA.md>)
