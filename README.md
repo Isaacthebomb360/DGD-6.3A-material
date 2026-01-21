@@ -11,8 +11,8 @@
 
 ## [Unreal / AGP](<Advanced Game Programming>)
 ### Deadlines:
-- CBA: 20th (11:30) January
-- Teamwork: 23rd January
+- CBA: 27th (11:30) January
+- __Teamwork: 23rd January__
 - Individual: 30th January
 
 ## [Game AI](<Game AI>)
@@ -23,8 +23,8 @@
 ## [Multiplayer](<Multiplayer Game Development>)
 ### Deadlines:
 - ~~CBA: 15th December~~
-- __Teamwork: 19th January__
-- Individual: 23rd January
+- ~~Teamwork: 19th January~~
+- __Individual: 23rd January__
 
 [Multiplayer CBA notes (Formatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master CBA.md>)
 
