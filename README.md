@@ -17,7 +17,7 @@
 
 ## [Game AI](<Game AI>)
 ### Deadlines:
-- TCA: 26th January
+- TCA: 26th January (room 103 (9:00 am - 11:00 am)) (room 104 (9:00am - 11:30 am))
 - Home Assignment: 28th January
 
 ## [Multiplayer](<Multiplayer Game Development>)
