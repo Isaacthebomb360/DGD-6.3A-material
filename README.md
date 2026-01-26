@@ -1,6 +1,6 @@
 # DGD-6.3A
 - #### Class + Study Material
-- hateing my life
+- __hateing my life__
 - #### Deadlines
 
 ## [XR Dev](<XR Development>)
@@ -12,19 +12,19 @@
 ## [Unreal / AGP](<Advanced Game Programming>)
 ### Deadlines:
 - CBA: 27th January
-- __Teamwork: 25th January__
+- ~~Teamwork: 25th January~~
 - Individual: 30th January
 
 ## [Game AI](<Game AI>)
 ### Deadlines:
-- TCA: 26th January (room 103 (9:00 am - 11:00 am)) (room 104 (9:00am - 11:30 am))
+- ~~TCA: 26th January (room 103 (9:00 am - 11:00 am)) (room 104 (9:00am - 11:30 am))~~
 - Home Assignment: 28th January
 
 ## [Multiplayer](<Multiplayer Game Development>)
 ### Deadlines:
 - ~~CBA: 15th December~~
 - ~~Teamwork: 19th January~~
-- Individual: 26rd January
+- ~~Individual: 26rd January~~
 
 [Multiplayer CBA notes (Formatted)](<Multiplayer Game Development/notes bcs i hate myself/notes master CBA.md>)
 
